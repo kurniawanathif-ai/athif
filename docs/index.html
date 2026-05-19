@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Athif Hosting Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Athif Hosting Demo</h1>
+      <nav>
+        <button data-view="setup">Setup</button>
+        <button data-view="biaya">Biaya</button>
+        <button data-view="bandwidth">Bandwidth</button>
+        <button data-view="backend">Backend</button>
+      </nav>
+    </header>
+
+    <main id="app">
+      <section id="setup" class="view">
+        <h2>Setup</h2>
+        <div id="setup-content">Memuat...</div>
+        <form id="setup-form">
+          <label>Project name <input name="project" /></label>
+          <label>Repo URL <input name="repo" /></label>
+          <button type="submit">Simpan setup</button>
+        </form>
+      </section>
+
+      <section id="biaya" class="view" style="display:none">
+        <h2>Biaya</h2>
+        <div id="biaya-content">Memuat...</div>
+      </section>
+
+      <section id="bandwidth" class="view" style="display:none">
+        <h2>Bandwidth</h2>
+        <div id="bandwidth-content">Memuat...</div>
+      </section>
+
+      <section id="backend" class="view" style="display:none">
+        <h2>Backend</h2>
+        <div id="backend-content">Memuat...</div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
